@@ -36,6 +36,7 @@ pydantic-settings = "^2.7.1"
 openai = "^1.63.2"
 slack-sdk = "^3.34.0"
 beautifulsoup4 = "^4.13.3"
+aiohttp = "^3.11"
 
 
 [tool.poetry.group.dev.dependencies]

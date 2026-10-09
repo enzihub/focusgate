@@ -98,13 +98,13 @@ git clone https://github.com/enzihub/focusgate && cd focusgate
 
 ```bash
 cd web
-export POSTGRES_PASSWORD=postgres
-export PG_CONNECTION_STRING=postgres://postgres:postgres@postgres:5432/main
+export POSTGRES_PASSWORD=choose-a-local-password
+export PG_CONNECTION_STRING="postgres://postgres:$POSTGRES_PASSWORD@postgres:5432/main"
 docker compose -f src/db/docker-compose.yml up -d
 cp .env.example .env.local        # fill it in (see Configuration)
 npm ci
 npm run db:migrate
-psql postgres://postgres:postgres@localhost:5432/main -f ../core/sql/get_scheduled_users.sql
+psql "postgres://postgres:$POSTGRES_PASSWORD@localhost:5432/main" -f ../core/sql/get_scheduled_users.sql
 ```
 
 **2. Web app** on <http://localhost:3000>:

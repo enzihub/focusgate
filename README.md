@@ -88,7 +88,7 @@ Both apps share one Postgres database. The web app owns the schema (Drizzle migr
 
 ## Quick start
 
-You need Node 18+, Python 3.12+, [Poetry](https://python-poetry.org), Docker (for Postgres and Redis), and accounts for Clerk, a Slack app, Google AI Studio (Gemini) and Mailtrap. Stripe is optional.
+You need Node 18+, Python 3.12 (the 2025 lockfile does not install on 3.14), [Poetry](https://python-poetry.org), Docker (for Postgres and Redis), and accounts for Clerk, a Slack app, Google AI Studio (Gemini) and Mailtrap. Stripe is optional.
 
 ```bash
 git clone https://github.com/enzihub/focusgate && cd focusgate

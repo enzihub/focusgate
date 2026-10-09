@@ -1,0 +1,1 @@
+ALTER TABLE "user_prefs" ADD COLUMN "pref_utc_time" text DEFAULT '12:00';

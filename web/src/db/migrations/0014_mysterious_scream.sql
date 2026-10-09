@@ -1,0 +1,1 @@
+ALTER TABLE "user_slack_workspaces" RENAME COLUMN "access_token" TO "user_access_token";

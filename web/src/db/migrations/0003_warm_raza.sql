@@ -1,0 +1,1 @@
+ALTER TABLE "user_prefs" RENAME COLUMN "pref_utc_hour" TO "pref_utc_time";
